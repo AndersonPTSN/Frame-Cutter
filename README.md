@@ -60,10 +60,10 @@ Existem outros argumentos na qual poderiam ser utilizados como *--name=”Nome d
 
 </div>
 
-## Referencias
+## Referências
 [PySimpleGUI](https://www.pysimplegui.org)
 
 [PyInstaller](https://pyinstaller.org/en/stable/usage.html)
 
-[pypi.org/opencv-python](https://pypi.org/project/opencv-python/)
+[Pypi.org/opencv-python](https://pypi.org/project/opencv-python/)
 
