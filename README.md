@@ -15,7 +15,21 @@ Nesse projeto foram utilizadas as seguintes bibliotecas:
 
 ## Geração do arquivo Executável
 
-Para gerar o executável foi necessário rodar o comando a baixo no terminal.
+Infelizmente não consegui subir para esse diretório o arquivo .exe pois ele é um pouco mais pesado do que o GitHub suporta, contudo, segue o passo a passo para poder criar o executável desse script.
+
+Primeiramente, é necessário instalar o [Python](https://www.python.org/downloads), recomendo a 3.8 pois foi a versão que usei, contudo versões posteriores podem rodar sem problemas ao meu ver.
+
+Em seguida você irá precisar instalar as bibliotecas utilizadas juntamente com a PyInstaller que é a biblioteca que transforma o .py em .exe. você terá de rodar no terminal os seguintes comandos para instalar:
+```
+pip install opencv-python
+```
+```
+pip install pysimplegui
+```
+```
+pip install pyinstaller
+```
+Após rodar esses comandos, na pasta onde se encontra o arquivo Frame_Cutter.py, você devera rodar o seguinte comando:  
 
 ```
 python3 -m PyInstaller --onefile -w Frame_Cutter.py
@@ -25,8 +39,13 @@ O argumento *--onefile* serviu para poder agrupar o executável em um único arq
 
 Existem outros argumentos na qual poderiam ser utilizados como *--name=”Nome do Programa”* que define o nome do programa, contudo não foi utilizado pois por padrão ele utiliza o nome da pasta ou o *--icon=”icon.ico”* pra definir um ícone ao programa, porem  o intuito da criação foi mais para sanar uma necessidade e ele cumpriu com o objetivo, para saber mais argumentos que possam a ser utilizados segue o link a baixo nas Referencias.
 
+## Observação 
+Ao criar as pastas com o arquivo .exe, você terá de criar uma pasta dentro da pasta *dist*, pasta esse na qual se encontra o arquivo executável, e nomeá-la de *frames* para poder salvar os frames do vídeo selecionado 
+
 ## Referencias
 [PySimpleGUI](https://www.pysimplegui.org)
 
 [PyInstaller](https://pyinstaller.org/en/stable/usage.html)
+
+[pypi.org/opencv-python](https://pypi.org/project/opencv-python/)
 
