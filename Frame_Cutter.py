@@ -21,11 +21,10 @@ def Cutter(arquivo,ext):
 sg.theme('DefaultNoMoreNagging') 
  
 frame_layout = [
-			[sg.FileBrowse("Selecionar vídeo",key="browse"), sg.Text("Somente arquivos AVI, MP4 ou GIF",key="texto")],
-			[sg.Text("Selecione o formato de saida:"),sg.Radio('.png', "radio", default=True,key=".png"),sg.Radio('.jpg', "radio",key=".jpg")],
-            [sg.Text("Suas imagens serão salvas na pasta frames")],
-            #[sg.ProgressBar(0, orientation='h', size=(20, 20), key='progbar')],
-            [sg.Button('Cortar',key="button"), sg.Button('Cancel')] 
+	[sg.FileBrowse("Selecionar vídeo",key="browse"), sg.Text("Somente arquivos AVI, MP4 ou GIF",key="texto")],
+	[sg.Text("Selecione o formato de saida:"),sg.Radio('.png', "radio", default=True,key=".png"),sg.Radio('.jpg', "radio",key=".jpg")],
+        [sg.Text("Suas imagens serão salvas na pasta frames")],
+        [sg.Button('Cortar',key="button"), sg.Button('Cancel')] 
  ]
 
 layout = [
